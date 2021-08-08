@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="albums.css" th:href="@{albums.css}">
+
+
+</head>
+<body>
+<div class="bigDiv">
+<div class="card" th:each="album : ${albums}">
+    <img th:src="${album.imgUrl}" alt="Avatar" style="width:100%">
+    <div class="container">
+        <h4><b>album: <span th:text="${album.title}"></span></b></h4>
+        <p>artist: <span th:text="${album.artist}"></span></p>
+        <p>number of songs: <span th:text="${album.songCount}"></span></p>
+        <p>length in seconds: <span th:text="${album.length}"></span></p>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
