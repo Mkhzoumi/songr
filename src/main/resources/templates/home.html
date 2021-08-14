@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="home.css">
 </head>
+
 <body>
-<button><a th:href="'/songs'">ALl Songs In Site</a></button>
-<button><a th:href="'/albums'">ALl albums In Site</a></button>
+<header>
+    <h1>Music Web Site</h1>
+</header>
+<div class="container">
+
+    <a th:href="'/songs'"><img src="https://lh3.googleusercontent.com/proxy/ERVdbj-4ppdkmmegncTi6Eb3nl6O15Q86cQ2SeoNWo9hFwijvLmx1SQSKVdO_pkz3QRuQg7o0PX1358pLMhJVct5MmXrc71tHYzeLNeixOnJ-VA8f1eZ0dWdJ-b2bY2xdkhAE1zobcMWp5_Be1M-o1FcJmU"  alt="">
+
+    </a>
+    <a th:href="'/albums'"><img src="https://www.melodynest.com/wp-content/uploads/2019/06/SPACE_album-mock.jpg" alt="">
+
+    </a>
+</div>
 </body>
 </html>
